@@ -38,8 +38,7 @@ module AppMysql
 
     # Don't generate system test files.
     config.generators.system_tests = nil
- end
- config.generators do |g|
+    config.generators do |g|
   g.test_framework :rspec,
     fixtures: true,
     view_specs: false,
@@ -48,4 +47,5 @@ module AppMysql
     controller_specs: false,
     request_specs: false
 end
+ end
 end
